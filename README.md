@@ -13,6 +13,7 @@ var Flow = DTree({
       decision_key1: nextLogic,
       decision_key2: alternativeLogic
     }
+  }
 });
 ```  
 ### DNode
