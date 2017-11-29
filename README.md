@@ -17,7 +17,7 @@ var Flow = DTree({
   }
 });
 ```
-The above can be vizualized as:
+The above can be visualized as:
 <br>
   <img src="https://raw.githubusercontent.com/filet-mign0n/filet-mignon.github.io/master/images/dflow_ex1.png" width="50%"><br>
 Where the edges are named after the different decisions that can be made by the parent Dnode.
