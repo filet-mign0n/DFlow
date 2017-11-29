@@ -51,7 +51,7 @@ A Dnode can be different things:
 
   - ### Function
 ```
-var dlogic = DNode(function logic(o) {
+var dLogic = DNode(function dLogic(o) {
   o.key = false;
   if (o.color = 'green') o.key = true;
 });
