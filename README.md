@@ -12,7 +12,7 @@ var Flow = DTree({
     decisions: {
       true: trueLogic,
       false: falseLogic
-      Turkmenistan: alternativeLogic
+      turkmenistan: alternativeLogic
     }
   }
 });
@@ -124,7 +124,7 @@ the above can be represented as:
   <img src="https://raw.githubusercontent.com/filet-mign0n/filet-mignon.github.io/master/images/dflow_ex3.png" width="50%"><br>
 
 ## Todos
-- implement promise like behavior for async logic
-- less hacky treeSelf reference method for graph
+- implement promise-like behavior for async logic
+- less hacky `treeSelf` reference method for graph
 - better tracking for dnodes inside arrays
 - perhaps move decision object inside DNode instance
