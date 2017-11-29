@@ -12,7 +12,7 @@ var Flow = DTree({
     decisions: {
       true: trueLogic,
       false: falseLogic
-      turkmenistan: alternativeLogic
+      Turkmenistan: alternativeLogic
     }
   }
 });
@@ -29,7 +29,6 @@ The global state `o` is composed of fundamental and peripheral properties that a
 <br>
   <img src="https://raw.githubusercontent.com/filet-mign0n/filet-mignon.github.io/master/images/dflow_ex5.png" width="50%">
 <br>
-
 After the root node, the tree is traversed recursively. At every recusrive step, the tree will try to evaluate the immediate Dnode, passing it the current global state `o`, and expecting it to update the latter with a key that points to the next DNode to evaluate or asking it to break with flags  `'fin'` and `'error'` or simply when not finding any subsequent nodes.
 
 `_Dtree.prototype.trackTraversal(o)` is called each step, it stores the context and some global state properties for ease of development and troubleshooting:
@@ -75,7 +74,7 @@ var arrLogic = DNode([
 ```
 the above can be represented as:
 <br>
-  <img src="https://raw.githubusercontent.com/filet-mign0n/filet-mignon.github.io/master/images/dflow_ex2.png" width="20%"><br>
+  <img src="https://raw.githubusercontent.com/filet-mign0n/filet-mignon.github.io/master/images/dflow_ex2.png" width="30%"><br>
   
   - ### DTree
 This is a critical conception that allows easy composition: DNodes can be DTrees. 
@@ -91,6 +90,9 @@ var mainTree = DTree({
     }
 });
 ```
+The above can be visualized as follows:
+<br>
+  <img src="https://raw.githubusercontent.com/filet-mign0n/filet-mignon.github.io/master/images/dflow_ex6.png" width="30%"><br>
   - ### Boolean or constant
 Boolean evaluations or values are interpreted as keys. 
 ```
