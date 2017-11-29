@@ -1,7 +1,7 @@
 # DFlow
-This library attempts to make an abstraction of flow-based programming via a decision tree.
+This library attempts to make a lighweight abstraction of flow-based programming via a decision tree.
 This tree is materialized by a javascript Object that is visually intuitive, easily composable and fully controllable.
-The syntax can be seen as a combination of declarative programming at the tree level and imperative at the node level. 
+The syntax can be seen as a combination of pseudo declarative programming at the tree level and imperative at the node level. 
 
 ## DTree
 A decision tree takes an `Object` as its constructor as follows:
