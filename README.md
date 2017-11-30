@@ -68,8 +68,8 @@ var dFunc = function(o) { /**/ return o; };
 var arrLogic = DNode([
   aLogic,
   bLogic,
-  tree,
-  func,
+  cTree,
+  dFunc,
 ]); 
 ```
 the above can be represented as:
