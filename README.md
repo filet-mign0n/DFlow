@@ -5,7 +5,7 @@ The syntax can be seen as a combination of pseudo declarative programming at the
 
 ## DTree
 A decision tree takes an `Object` as its constructor as follows:
-```
+```js
 var Flow = DTree({
   Flow: {
     dnode: startLogic,
@@ -38,7 +38,7 @@ After the root node, the tree is traversed recursively. At every recusrive step,
 
 ## DNode
 A decision node contains the logic that makes the decision for the next step to follow.
-```
+```js
 var startLogic = DNode(function dLogic(o) {
   o.key = false;
   if (o.kpi > 0.10) o.key = true;
@@ -50,7 +50,7 @@ The above code highlights the fundamental role `o.key` plays in the flow. At lea
 A Dnode can be different things:
 
   - ### Function
-```
+```js
 var dLogic = DNode(function dLogic(o) {
   o.key = false;
   if (o.color = 'green') o.key = true;
@@ -59,7 +59,7 @@ var dLogic = DNode(function dLogic(o) {
 
   - ### Array
 When data is meant to flow in a series of transforms, state grooming or chained decisions better suited to be a series of true or false decisions that respectively continue or break the iteration.
-```
+```js
 var aLogic = DNode({ /**/ });
 var bLogic = DNode({ /**/ });
 var cTree = DTree({ /**/ });
@@ -79,7 +79,7 @@ the above can be represented as:
   - ### DTree
 This is a critical conception that allows easy composition: DNodes can be DTrees. 
 This means that evaluating a DTree-like DNode is equivalent to traversing the tree and handling the returned global state within the calling/parent tree's recursion. 
-```
+```js
 var aTree = DTree({ /**/ });
 var mainTree = DTree({
   root: {
@@ -95,7 +95,7 @@ The above can be visualized as follows:
   <img src="https://raw.githubusercontent.com/filet-mign0n/filet-mignon.github.io/master/images/dflow_ex6.png" width="30%"><br>
   - ### Boolean or constant
 Boolean evaluations or values are interpreted as keys. 
-```
+```js
 DNode(valueA === valueB || !valueC);
 ```
   - ### Neither a DNode or DTree
