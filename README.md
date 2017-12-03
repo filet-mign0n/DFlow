@@ -103,7 +103,7 @@ The value for a Dnode property in a tree can be a string, number, boolean or an 
 
 ## Decision Graph
 Self references to the root of the tree and even a path to a subtree are supported. This provides the potential for graph based decision modelling.
-```
+```js
 var Flow = DTree({
   Flow: {
     dnode: startLogic,
