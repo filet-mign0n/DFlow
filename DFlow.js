@@ -58,7 +58,7 @@ _DNode.prototype = {
           return o;
         }
       }
-      o.dnode_name = dnodes;
+      o.dnode_name = dnodes.toString();
       return o;
     // all other instances are treated as keys
     } else {
