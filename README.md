@@ -1,4 +1,12 @@
-# DFlow
+```
+  ____   _   _               
+ (|   \ | | | |              
+  |    || | | |  __          
+ _|    ||/  |/  /  \_|  |  |_
+(/\___/ |__/|__/\__/  \/ \/  
+        |\                   
+        |/                   
+```
 This library attempts to make a lighweight abstraction of flow-based programming via a decision tree.
 This tree is materialized by a javascript Object that is visually intuitive, easily composable and fully controllable.
 The syntax can be seen as a combination of pseudo declarative programming at the tree level and imperative at the node level. 
