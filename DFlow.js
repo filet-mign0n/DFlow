@@ -1,3 +1,5 @@
+// https://github.com/filet-mign0n/DFlow
+
 function DNode(x, name){
   if (!(this instanceof _DNode)){
     return new _DNode(x, name);
